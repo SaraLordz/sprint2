@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <form id="validationForm" name="validationForm">
+        <label forHTML="letras">Introduzca solo letras:</label>
+        <br>
+        <input type="text" id="letras" name="letras" onkeyup="validar()" onblur="validar()" />
+        <div id="message" style="position: absolute; left: 10px; top: 50px; background-color: rgba(232, 241, 102, 0.548); z-index: 10" hidden>
+          Introduzca solo letras (A-Z) o (a-z). Máximo 30 caracteres.
+        </div>
+        <br>
+        <br>
+        <button type="button" onclick="verificar()">Validar</button>
+      </form>
